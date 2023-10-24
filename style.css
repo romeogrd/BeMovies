@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    padding: 42px 180px 42px 180px;
+    background-color: #141517;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navHeader {
+    display: flex;
+}
+
+.navHeader li {
+    margin-left: 29px;
+    color: #FFF;
+    font-family: Inria Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}
+
+.logo {
+    color: #C00;
+    font-family: Inria Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.logoMovies {
+    color: #FFF;
+    font-family: Inria Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+
+/* MAIN */
+.main {
+    background: #191B20;
+    padding-top: 73px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    -left: 224px;
+    padding-left: 224px;
+    padding-right: 224px;
+   
+}
+
+    /* FORM */
+
+
+
+.formMain {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 61px;
+}
+
+
+.inputMain {
+    border-radius: 8px 0px 0px 8px;
+    background: #FFF;
+    width: 228px;
+    height: 44px;
+    border-style: none;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 18px;
+}
+
+
+
+.buttonMain {
+    background-color: #C00;
+    padding: 14px;
+    border-radius: 0px 8px 8px 0px;
+    border-style: none;
+}
+
+
+.titleSwiper1, .titleSwiper2, .titleSwiper3{
+    margin-bottom: 10px;
+}
+
+    /* SWIPER 1 */
+
+
+.divSwiper1 {
+   
+    margin-bottom: 95px;
+    
+    /* display: none; */
+
+    
+}
+
+    /* SWIPER 2 */  
+
+.divSwiper2 {
+    margin-bottom: 95px;
+}
+
+    /* SWIPER 3 */  
+.divSwiper3 {
+    padding-bottom: 109px;
+    text-align: center;
+}
+
+.titleDivSwiper3 {
+    margin-bottom: 46px;
+}
+
+.navSwiper3 {
+    display: flex;
+    justify-content: space-between;
+    width: 596px;
+    margin: auto;
+
+}
+
+.line {
+    width: 599px;
+height: 1px;
+background: #FFF;
+margin: auto;
+margin-top: 26px;
+margin-bottom: 29px;
+}
+
+
+.titleSwiper3 {
+    text-align: left;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    color: #B8B8B8;
+    font-family: Inria Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    background-color: #141517;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 180px 80px 180px;
+}
+
+
+.navFooter {
+    display: flex;
+
+}
+
+.navFooter li {
+    color: #FFF;
+    font-family: Inria Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-left: 29px;
+}
+
+.copyright {
+    color: #B8B8B8;
+    font-family: Inria Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
