@@ -17,7 +17,7 @@ a {
 }
 
 img {
-    display: block;
+    /*  display: block; */
     width: 100%;
 }
 
@@ -83,10 +83,16 @@ header {
     -left: 224px;
     padding-left: 224px;
     padding-right: 224px;
-   
+
 }
 
-    /* FORM */
+.titleSwiper1,
+.titleSwiper2,
+.titleSwiper3 {
+    margin-bottom: 10px;
+}
+
+/* FORM */
 
 
 
@@ -121,36 +127,84 @@ header {
     padding: 14px;
     border-radius: 0px 8px 8px 0px;
     border-style: none;
+
 }
 
 
-.titleSwiper1, .titleSwiper2, .titleSwiper3{
-    margin-bottom: 10px;
-}
 
-    /* SWIPER 1 */
+
+/* SWIPER 1 */
 
 
 .divSwiper1 {
-   
-    margin-bottom: 95px;
-    
-    /* display: none; */
 
-    
+    margin-bottom: 95px;
+    position: relative;
+
+    /* display: none; */
+    position: relative;
+
 }
 
-    /* SWIPER 2 */  
+.button-prev1, .button-prev2, .button-prev3 {
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1;
+    left: -23px;
+    height: 16px;
+    width: 16px;
+}
+
+.button-next1, .button-next2, .button-next3{
+    position: absolute;
+    top: 53%;
+    transform: translateY(-50%);
+    position: absolute;
+    z-index: 1;
+    right: -23px;
+    height: 16px;
+    width: 16px;
+}
+
+
+
+/* 
+.button-prev1,
+.button-prev2,
+.button-prev3 {
+    left: 10 px;
+    /* Ajustez la position du bouton précédent (peut être modifié en fonction de vos besoins) */
+/* 
+}
+
+.button-next1,
+.button-next2,
+.button-next3 {
+    right: 10px;
+}
+    /* Ajustez la position du bouton suivant (peut être modifié en fonction de vos besoins) */
+
+
+
+
+
+/* SWIPER 2 */
 
 .divSwiper2 {
     margin-bottom: 95px;
+    position: relative;
 }
 
-    /* SWIPER 3 */  
+/* SWIPER 3 */
 .divSwiper3 {
     padding-bottom: 109px;
     text-align: center;
+    position: relative;
 }
+
+
 
 .titleDivSwiper3 {
     margin-bottom: 46px;
@@ -161,16 +215,25 @@ header {
     justify-content: space-between;
     width: 596px;
     margin: auto;
+}
 
+.navSwiper3 li {
+    padding: 7px 10px;
+}
+
+.navSwiper3 li:hover {
+    border-radius: 8px;
+    background: #C00;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .line {
     width: 599px;
-height: 1px;
-background: #FFF;
-margin: auto;
-margin-top: 26px;
-margin-bottom: 29px;
+    height: 1px;
+    background: #FFF;
+    margin: auto;
+    margin-top: 19px;
+    margin-bottom: 29px;
 }
 
 
@@ -223,4 +286,225 @@ footer {
     font-style: normal;
     font-weight: 300;
     line-height: normal;
+}
+
+
+/* MODAL REGISTER */
+
+.modalRegister {
+    margin: auto;
+    width: 410px;
+    height: 608px;
+    background-color: #000;
+    padding-top: 66px;
+    padding-left: 61px;
+    position: relative;
+}
+
+.formRegister {
+    display: none;
+}
+
+.navModal {
+    display: flex;
+    width: 288px;
+    height: 54px;
+    margin-bottom: 54px;
+}
+
+.navModal button {
+    color: #FFF;
+    font-family: Inria Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    text-transform: uppercase;
+    width: 100%;
+    background-color: #000;
+    border-style: none;
+    border: 1px solid #FFF;
+}
+
+.buttonSwitchSignup {
+    border-radius: 8px 0px 0px 8px;
+}
+
+.buttonSwitchLogin {
+    border-radius: 0px 8px 8px 0px;
+}
+
+
+.forgotPassword,
+.signup,
+.login {
+    color: #C00;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.alreadyMember,
+.rememberMe,
+.notAMember {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.buttonSignin,
+.buttonLogin {
+    width: 288px;
+    height: 47px;
+    border-radius: 8px;
+    background: #C00;
+    margin-bottom: 30px;
+    color: #FFF;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.formRegister input {
+    width: 288px;
+    height: 44px;
+    margin-bottom: 25px;
+}
+
+#username,
+#password {
+    width: 288px;
+    height: 44px;
+    margin-bottom: 25px;
+    padding-left: 20px;
+    color: #000;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#remember {
+    margin-bottom: 46px;
+}
+
+.forgotPassword {
+    margin-bottom: 19px;
+}
+
+.closeModal {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    left: 14px;
+}
+
+
+/* MODAL MOVIES */
+
+.modalMovies {
+    width: 742px;
+    height: 526px;
+    margin: auto;
+    position: relative;
+    padding-top: 74px;
+    padding-left: 79px;
+    background: #000;
+}
+
+.closeModalMovies {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 11px;
+    left: 14px;
+}
+
+.imgStar {
+    width: 21px;
+    height: 21px;
+}
+
+.movieCard {
+    display: flex;
+}
+
+.divImg {
+    width: 234px;
+    height: 351px;
+    margin-right: 58px;
+}
+
+.titleCard {
+    color: #C00;
+    font-family: Inria Sans;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    text-transform: uppercase;
+}
+
+.yeardCard {
+    color: #E9E9E9;
+    font-family: Inria Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.divRate {
+    display: flex;
+}
+
+.rateCard {
+    color: #C00;
+
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 12px;
+}
+
+.genreCard {
+    color: #E9E9E9;
+    font-family: Inria Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+}
+
+.resumeCard {
+    color: #FFF;
+    font-family: Inria Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    /* 24px */
+    letter-spacing: 0.48px;
+    width: 292px;
 }

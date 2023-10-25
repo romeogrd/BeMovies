@@ -6,10 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
-  <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
 </head>
 
@@ -23,9 +20,9 @@
 
     <nav>
       <ul class="navHeader">
-        <li><a href="#">SEARCH</a></li>
-        <li><a href="#">LATEST</a></li>
-        <li><a href="#">GENRES</a></li>
+        <li><a href="#ancre1">SEARCH</a></li>
+        <li><a href="#ancre2">LATEST</a></li>
+        <li><a href="#ancre3">GENRES</a></li>
         <li><a href="#" class="registerBtnMenu">REGISTER</a></li>
         <li><a href="#" class="signinBtnMenu">SIGN IN</a></li>
       </ul>
@@ -35,71 +32,65 @@
 
 
   <dialog class="modalRegister">
-
-    <img src="closebtn.svg" alt="close" class="closeModalRegister">
-    <nav>
-      <p>SIGN UP</p>
-      <p>LOGIN</p>
+    <img src="closebtn.svg" alt="" class="closeModal">
+   
+    <nav class="navModal">
+      
+      <button class="buttonSwitchSignup">SIGN UP</button>
+      <button class="buttonSwitchLogin">LOGIN</button>
     </nav>
-    <div class="swiper swiper1">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide slideSignup">
-
-          <input type="text" name="username" id="username" placeholder="Username">
-          <input type="text" name="password" id="password" placeholder="password">
-          <input type="text" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm your password">
-          <button type="submit">SIGN IN</button>
-          <p>Already a member? <span class="login"><a href="#">Log in</a></span></p>
-
-        </div>
-
-
-        <div class="swiper-slide slideLogin">
-
-          <input type="text" name="username" id="username" placeholder="Username">
-          <input type="text" name="password" id="password" placeholder="password">
-          <input type="checkbox" id="remember" name="remember" value="remember">
-          <label for="remember"> Remember me</label>
-          <button type="submit">LOGIN</button>
-          <p><a href="#">I forgot my password</a></p>
-          <p>Not a member yet ? <span class="signup"><a href="#">Sign up</a></span></p>
-
-        </div>
-      </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-
-      <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-
-      <!-- If we need scrollbar -->
-      <div class="swiper-scrollbar"></div>
+    <div class="formRegister">
+      <input type="text" name="username" id="username" placeholder="Username">
+      <input type="text" name="password" id="password" placeholder="password">
+      <input type="text" name="passwordConfirm" id="passwordConfirm" placeholder="Confirm your password">
+      <br>
+      <button type="submit" class="buttonSignin">SIGN IN</button>
+      <p class="alreadyMember">Already a member? <span class="login"><a href="#">Log in</a></span></p>
     </div>
+
+    <div class="formLogin">
+
+
+    <input type="text" name="username" id="username" placeholder="Username">
+    <input type="text" name="password" id="password" placeholder="Password">
+    <br>
+    <input type="checkbox" id="remember" name="remember" value="remember">
+    <label for="remember" class="rememberMe"> Remember me</label>
+    <br>
+    <button type="submit" class="buttonLogin">LOGIN</button>
+    <p class="forgotPassword"><a href="#" >I forgot my password</a></p>
+    <p class="notAMember">Not a member yet ? <span class="signup"><a href="#">Sign up</a></span></p>
+
+    </div>
+    
+
+   
 
   </dialog>
 
 
 
   <dialog class="modalMovies">
+
     <img src="closebtn.svg" alt="close" class="closeModalMovies">
 
-
-
-
-
-
     <div class="movieCard">
-      <img src="" alt="">
+      <div class="divImg">
+      <img src="Rectangle 2.png" alt="" class="imgMovieModal">
+    </div>
       <div class="movieCardText">
-        <p class="titleCard"></p>
-        <p class="yeardCard"></p>
-        <p><img src="Rate.svg" alt="Rate"></p>
-        <p class="genreCard"></p>
-        <p class="resumeCard"></p>
-        <p class="castCard">Cast : <span class="castName"></span></p>
+        <p class="titleCard">erererererer</p>
+        <p class="yeardCard">1565</p>
+        <div class="divRate">
+        <img src="Rate.svg" alt="Rate" class="imgStar"><p class="rateCard">8,7</p>
+        </div>
+        <p class="genreCard">errerere</p>
+        <p class="resumeCard">Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.
+        <br>
+        <br>
+        CAST :      <span class="castName">erereererer</span>
+        </p>
+       
       </div>
 
 
@@ -117,15 +108,48 @@
 
     <form class="formMain">
       <input type="text" placeholder="Enter your search" class="inputMain">
-      <button type="submit" class="buttonMain"><img src="Vector.svg" alt="submit" ></button>
+      <button type="submit" class="buttonMain"><img src="Vector.svg" alt="submit"></button>
     </form>
 
 
 
-    <div class="divSwiper1">
-      <p class="titleSwiper1">Results for <span  class="resultsInput"></span></p>
+    <div class="divSwiper1" id="ancre1">
+      <p class="titleSwiper1">Results for <span class="resultsInput"></span></p>
 
       <div class="swiper swiper1">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide slide1"><img src="Rectangle 2.png" alt="">
+          </div>
+          <div class="swiper-slide"><img src="Rectangle 3.png" alt=""></div>
+          <div class="swiper-slide"><img src="Rectangle 4.png" alt=""></div>
+          <div class="swiper-slide"><img src="Rectangle 5.png" alt=""></div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        
+
+        <div class="swiper-scrollbar"></div>
+
+      </div>
+
+      <img src="buttonprecedent.svg" alt="" class="button-prev1">
+      <img src="buttonnext.svg" alt="" class="button-next1">
+    </div>
+
+
+
+
+    <div class="divSwiper2">
+      <p class="titleSwiper2" id="ancre2">Latest releases</p>
+
+      <div class="swiper swiper2">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -136,63 +160,36 @@
           <div class="swiper-slide"><img src="Rectangle 5.png" alt=""></div>
           <div class="swiper-slide">Slide 5</div>
           <div class="swiper-slide">Slide 6</div>
-          
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"><img src="buttonprecedent.svg" alt=""></div>
-        <div class="swiper-button-next"><img src="buttonnext.svg" alt=""></div>
+       
 
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
-    </div>
-
-
-
-
-    <div class="divSwiper2">
-      <p class="titleSwiper2">Latest releases</p>
-
-      <div class="swiper swiper2">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
-        </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
-      </div>
+      <img src="buttonprecedent.svg" alt="" class="button-prev2">
+      <img src="buttonnext.svg" alt="" class="button-next2">
     </div>
 
 
 
 
 
-    <div class="divSwiper3">
+    <div class="divSwiper3" id="ancre3">
       <p class="titleDivSwiper3">Movies by genre</p>
-      
-        <ul class="navSwiper3">
-          <li class="comedy">Comedy</li>
-          <li class="drama">Drama</li>
-          <li class="action">Action</li>
-          <li class="romance">Romance</li>
-          <li class="fantasy">Fantasy</li>
-          <li class="animation">Animation</li>
-        </ul>
-      
+
+      <ul class="navSwiper3">
+        <li class="comedy">Comedy</li>
+        <li class="drama">Drama</li>
+        <li class="action">Action</li>
+        <li class="romance">Romance</li>
+        <li class="fantasy">Fantasy</li>
+        <li class="animation">Animation</li>
+      </ul>
+
 
       <div class="line"></div>
 
@@ -201,21 +198,25 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
-          ...
+          <div class="swiper-slide"><img src="Rectangle 2.png" alt="">
+          </div>
+          <div class="swiper-slide"><img src="Rectangle 3.png" alt=""></div>
+          <div class="swiper-slide"><img src="Rectangle 4.png" alt=""></div>
+          <div class="swiper-slide"><img src="Rectangle 5.png" alt=""></div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
+        
         <!-- If we need scrollbar -->
         <div class="swiper-scrollbar"></div>
       </div>
+      <img src="buttonprecedent.svg" alt="" class="button-prev3">
+        <img src="buttonnext.svg" alt="" class="button-next3">
+
     </div>
 
 
@@ -245,7 +246,7 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <script src="script.js"></script>
-  
+
 </body>
 
 </html>
