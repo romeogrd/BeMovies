@@ -129,7 +129,7 @@ header {
     border-style: none;
 }
 
-.buttonMain :hover {
+.buttonMain img:hover {
     scale: 1.3;
     cursor: pointer;
 }
@@ -143,12 +143,23 @@ header {
 
     margin-bottom: 95px;
     position: relative;
+    display: none;
 
     
     
 
 
 }
+
+.swiper-slide img{
+  height: 351px;
+}
+
+.swiper-slide:hover{
+    cursor: pointer;
+    scale: 1.1;
+}
+
 
 .button-prev1, .button-prev2, .button-prev3 {
     position: absolute;
